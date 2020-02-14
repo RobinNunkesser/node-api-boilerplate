@@ -60,8 +60,8 @@ An opinionated boilerplate for Node web APIs focused on separation of concerns a
 
 _Notice that the boilerplate comes with a small application for user management already, you can delete it with a npm script after you understand how the boilerplate works but please do the quick start first!_ 😊
 
-1. Clone the repository with `git clone --depth=1 https://github.com/talyssonoc/node-api-boilerplate`
-2. Setup the database on `config/database.js` (there's an example file there to be used with PostgreSQL 😉 )
+1. Clone the repository with `git clone --depth=1 https://github.com/RobinNunkesser/node-api-boilerplate`
+2. Setup the database on `config/database.js` (there's an example file there to be used with sqlite, so maybe no setup is needed 😉)
 3. Install the dependencies with `yarn` (click here if [you don't have Yarn installed](https://yarnpkg.com/docs/install))
 4. Create the development and test databases you have setup on `config/database.js`
 5. Run the database migrations with `npm run sequelize db:migrate`
@@ -71,7 +71,7 @@ _Notice that the boilerplate comes with a small application for user management 
 
 After playing a little bit with the boilerplate and _before_ implementing a real application with it I recommend you to read at least the `Setup` and the `Organization and architecture` sections of our [Wiki](https://github.com/talyssonoc/node-api-boilerplate/wiki). After that you'll be able to remove the example application files running `npm run cleanup`
 
-## Aditional info:
+## Additional info:
 
 - Don't forget to run the migrations for the test environment as well (including when you create a new migration) with `npm run sequelize db:migrate -- --env=test`
 
